@@ -16,9 +16,11 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@master
-    - name: Checkout submodules
-      uses: textbook/git-checkout-submodule-action@master
+      uses: actions/checkout@v2
+    - name: Pull & update submodules recursively
+        run: |
+        git submodule update --init --recursive
+        git submodule update --recursive --remote
     - name: Set up Clang
       uses: egor-tensin/setup-clang@v1
       with:
