@@ -10,7 +10,7 @@ fn main() {
 
     let fulldir = Path::new(&dir).join("kcp");
 
-    Command::new("cc").args(&["-c" , "ikcp.c", "-o" , "libkcp.o"])
+    Command::new("gcc").args(&["-c" , "ikcp.c", "-o" , "libkcp.o"])
                         .current_dir(fulldir.clone())
                         .status().unwrap();
 
