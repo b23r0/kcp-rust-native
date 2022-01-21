@@ -2,6 +2,12 @@
 name = "kcp-rust-native"
 version = "0.1.0"
 edition = "2021"
+authors = ["b23r0 <b23r0@foxmail.com>"]
+description = "KCP bindings for Rust."
+repository = "https://github.com/b23r0/kcp-rust-native"
+readme = "README.md"
+license = "MIT"
+keywords = ["kcp", "bindings"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
