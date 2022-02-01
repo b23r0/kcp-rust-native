@@ -46,7 +46,7 @@ fn main() {
 
             let received = ikcp_recv(kcp, buf.as_mut_ptr() as *mut i8, 20);
             if received != -1 {
-                println!("{}" , String::from_utf8(buf.to_vec()).unwrap());
+                println!("{}" , String::from_utf8(buf[..{received as usize}].to_vec()).unwrap());
             }
         }
     };
