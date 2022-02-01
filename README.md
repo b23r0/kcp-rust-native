@@ -49,6 +49,7 @@ fn main() {
                 println!("{}" , String::from_utf8(buf[..{received as usize}].to_vec()).unwrap());
             }
         }
+        ikcp_release(kcp);
     };
 }
 
